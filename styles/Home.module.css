@@ -12,6 +12,13 @@
   align-items: center;
 }
 
+.header{
+  height: 50px;
+  width: 100%;
+  background-color: aquamarine;
+  text-align: center;
+}
+
 .footer {
   display: flex;
   flex: 1;
