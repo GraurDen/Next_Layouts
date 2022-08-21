@@ -1,19 +1,11 @@
 import { NextPage } from "next";
-import type { ReactElement } from "react";
-import AdminLayout from "../components/layouts/adminLayout/admin";
-import MainLayout from "../components/layouts/main/main";
+import { AppProps } from "next/app";
+import type { ReactElement, ReactNode } from "react";
 
-export type PageWithAdminLayoutType = NextPage & { layout: typeof AdminLayout };
-export type PageWithMainLayoutType = NextPage & { layout: typeof MainLayout };
+export type NextPageWithLayout = NextPage & {
+  getLayout?: (page: ReactElement) => ReactNode;
+};
 
-export type PageWithLayoutType =
-  | PageWithAdminLayoutType
-  | PageWithMainLayoutType;
-
-export type LayoutProps = ({
-  children,
-}: {
-  children: ReactElement;
-}) => ReactElement;
-
-export default PageWithLayoutType;
+export type AppPropsWithLayout = AppProps & {
+  Component: NextPageWithLayout;
+};
