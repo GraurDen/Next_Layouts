@@ -4,7 +4,7 @@ import { ReactElement } from "react";
 const AdminLayout = ({ children }: { children: ReactElement }) => {
   return (
     <div style={{ textAlign: "center" }}>
-      <div>Состояние после Hard Reset</div>
+      <div>Test 1 with revert</div>
       <Header />
       {children}
     </div>
