@@ -5,6 +5,7 @@ const AdminLayout = ({ children }: { children: ReactElement }) => {
   return (
     <>
       <Header />
+      <h1>Changes afert REFLOG !!!</h1>
       {children}
     </>
   );
