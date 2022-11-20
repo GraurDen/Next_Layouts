@@ -4,6 +4,7 @@ import { ReactElement } from "react";
 const AdminLayout = ({ children }: { children: ReactElement }) => {
   return (
     <>
+      {/* All changes was removed */}
       <Header />
       {children}
     </>
